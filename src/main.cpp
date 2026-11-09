@@ -13,7 +13,7 @@ struct DeviceRegistryFileIOWrapper
 {
     DeviceRegistryFileIOWrapper()
     {
-        std::ifstream file("devices.csv");
+        std::ifstream file("devices.dat");
         if (file.is_open())
         {
             std::string countStr;
@@ -35,7 +35,7 @@ struct DeviceRegistryFileIOWrapper
 
     ~DeviceRegistryFileIOWrapper()
     {
-        std::ofstream file("devices.csv");
+        std::ofstream file("devices.dat");
         auto devices = registry.GetAllDevices();
         if (file.is_open())
         {
