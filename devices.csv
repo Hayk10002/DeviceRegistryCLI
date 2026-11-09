@@ -1,0 +1,6 @@
+4
+customid,othername,prettytype,5,false,hello:world
+id,name,type,3,false,one:three:two
+id2,name,type2,3,false,one:three:two
+id4,name3,type,6,false,one
+id4,id2,id
